@@ -1,0 +1,24 @@
+# Ignore virtual environment
+venv/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore input job embedding CSV (since it's large and changes frequently)
+job_embedding.csv
+
+# Ignore uploaded resume files
+uploads/
+
+# Ignore environment-related files
+.env
+.DS_Store
+
+# Ignore log files
+logs/
+*.log
+
+# Ignore Jupyter Notebook checkpoints (if working with notebooks)
+.ipynb_checkpoints/
