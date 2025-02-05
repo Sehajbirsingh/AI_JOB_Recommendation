@@ -58,4 +58,4 @@ def create_resume_embedding(structured_resume, glove_embeddings, embedding_dim=1
 glove_embeddings = load_glove_embeddings("uploads/glove.6B.100d.txt")
 
 # Generate Resume Embedding
-resume_embedding = create_resume_embedding(structured_resume, glove_embeddings, embedding_dim=100)
+#resume_embedding = create_resume_embedding(structured_resume, glove_embeddings, embedding_dim=100)

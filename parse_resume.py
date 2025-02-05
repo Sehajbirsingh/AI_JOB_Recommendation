@@ -21,7 +21,7 @@ def parse_resume(cleaned_text):
     Extract:
     - "skills": List of skills across resume separated by ','.
     - "experience_summary": Super concise work experience summary.
-    - "years_of_experience": Total number of years worked related to experience section.
+    - "years_of_experience": Total number of years worked related to experience section most probably you can calculate it will be near to job.
     - "previous_job_titles": List of past job titles.
 
     Resume Text:
@@ -67,8 +67,7 @@ def get_resume_feedback(resume_text):
     Resume Text:
     {resume_text}
 
-    **Output example:**
-    "Your resume highlights impressive skills in Python and data engineering. To improve further, consider adding measurable achievements. Overall, a strong resume showcasing versatility and expertise!"
+    **Feedback should be constructive, motivational, and concise.**
     """
 
     chat_completion = client.chat.completions.create(
@@ -87,5 +86,8 @@ def get_resume_feedback(resume_text):
 
 
 # Process the cleaned resume text
-structured_resume = parse_resume(cleaned_resume)  # Structured data
-resume_feedback = get_resume_feedback(resume_text)  # Feedback on resume text
+#structured_resume = parse_resume(cleaned_resume)  # Structured data
+#resume_feedback = get_resume_feedback(resume_text)  # Feedback on resume text
+
+# Print structured resume and feedback
+print("Structured Resume:")
